@@ -1,0 +1,138 @@
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0; /* Light gray background color for the webpage */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Navigation Menu */
+nav {
+  width: 100%;
+  background-color: #333;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Sections */
+section {
+  width: 80%;
+  max-width: 1200px;
+  padding: 20px;
+  margin: 20px 0;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Home Section */
+#home .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#home .row {
+  display: flex;
+  width: 100%;
+}
+
+.about-col-1 {
+  flex: 1;
+  text-align: center;
+}
+
+.about-col-2 {
+  flex: 1;
+  padding: 20px;
+}
+
+.profile-photo {
+  border-radius: 50%;
+  max-width: 300px; /* Increase size of the profile picture */
+  width: 100%;
+  height: auto;
+}
+
+.sub-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+#home p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+#contact-button, #contact-form button {
+  background-color: aquamarine; /* Light blue color for buttons */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+#contact-button:hover, #contact-form button:hover {
+  background-color: #7fffd4; /* Darker shade of light blue on hover */
+}
+
+/* Skills Section */
+#skills ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#skills ul li {
+  background: #f4f4f4;
+  margin: 5px 0;
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  section {
+    width: 90%;
+  }
+
+  #home .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-col-1,
+  .about-col-2 {
+    text-align: center;
+  }
+
+  .profile-photo {
+    margin: 20px 0;
+  }
+}

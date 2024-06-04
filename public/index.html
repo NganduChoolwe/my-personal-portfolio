@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="styles.css"> <!-- Link to the external CSS file -->
+  <script defer src="script.js"></script> <!-- Use defer to ensure the script loads after the DOM -->
+</head>
+<body>
+  <!-- Navigation Menu -->
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Home Section -->
+  <section id="home">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="images/myprofile.jpg" alt="My Photo" class="profile-photo">
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <p>
+            Hi, I'm Choolwe Ng'andu, a passionate developer with skills in Java, HTML, CSS, JavaScript, and Python.
+            With a robust foundation in full-stack development and a keen eye for UI/UX design, I blend technical proficiency with creative problem-solving.
+            I am passionate about innovation and creating secure, user-centric applications that not only perform seamlessly but also deliver exceptional user experiences.
+            As I approach graduation, I am eager to leverage my skills in dynamic and innovative environments, contributing to projects that push the boundaries of technology and design.
+          </p>
+          <button id="contact-button">Contact Me</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>My Projects</h2>
+    <div id="repo-list"></div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <h2>My Skills</h2>
+    <ul>
+      <li>Java</li>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      <li>Python</li>
+    </ul>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form id="contact-form"> <!-- Updated to match the JavaScript code -->
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" required></textarea>
+      <button type="submit">Submit</button>
+    </form>
+    <div id="form-message"></div> <!-- Placeholder for success/error message -->
+  </section>
+</body>
+</html>
